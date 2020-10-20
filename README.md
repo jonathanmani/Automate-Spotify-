@@ -1,7 +1,7 @@
 # Automate Spotify Playlist
 
-This program will take a playlist of songs from Youtube and automatically search for those songs in Spotify and create a playlist
-It will do this in 5 steps 
+This program will take a playlist of songs from Youtube and automatically search for those songs and create a playlist in Spotify.
+It will do this in 5 steps: 
 
 
 Step 1: Log into YouTube
