@@ -5,7 +5,7 @@ Step 3: Create a new Playlist in Spotify
 Step 4: Search for the song
 Step 5: Add this song to the new Spotify Playlist
 """
-
+import json
 class CreatePlaylist:
 
     def __int__(self):
@@ -21,7 +21,11 @@ class CreatePlaylist:
 
     #Step 3: Create a new Playlist
     def create_playlist(self):
-        pass
+        request_body = json.dumps({
+            "name":"YouTube Liked Playlist",
+            "description": "All Liked YouTube Videos",
+            "public": True,
+        })
 
     #Step 4: Search for the song
     def get_spotify_url(self):
