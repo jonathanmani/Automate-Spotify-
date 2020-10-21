@@ -9,3 +9,6 @@ Step 2: Get Liked Videos
 Step 3: Create a new Playlist in Spotify
 Step 4: Search for the song
 Step 5: Add this song to the new Spotify Playlist
+
+## Some things to consider
+Spotify will not make a playlist of songs if it doesn't have it in its library
