@@ -6,10 +6,11 @@ Step 4: Search for the song
 Step 5: Add this song to the new Spotify Playlist
 """
 import json
+from secrets import spotify_user_id
 class CreatePlaylist:
 
     def __int__(self):
-        pass
+        self.user_id = spotify_user_id
 
     #Step 1: Log into YouTube
     def get_youtube_client(self):
@@ -24,8 +25,11 @@ class CreatePlaylist:
         request_body = json.dumps({
             "name":"YouTube Liked Playlist",
             "description": "All Liked YouTube Videos",
-            "public": True,
+            "public": True
         })
+
+        query = "https://api.spotify.com/v1/users/{user_id}/playlists".format(self.user_id)
+
 
     #Step 4: Search for the song
     def get_spotify_url(self):
